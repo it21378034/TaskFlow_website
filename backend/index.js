@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://user:Ifqi6bmxHylmOhWt@cluster0.sb4y0ml.mongodb.net/taskflow');
+mongoose.connect('mongodb+srv://user:user@cluster0.sb4y0ml.mongodb.net/taskflow?retryWrites=true&w=majority');
 
 // Example Task schema
 const Task = mongoose.model('Task', {
